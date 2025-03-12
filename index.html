@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Service Offerings & Pricing Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .logo-section {
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .logo-section img {
+      max-width: 150px;
+      height: auto;
+    }
+    .header {
+      position: relative;
+      background: linear-gradient(to right, #1db6f2, #1ba1bf);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+      pointer-events: none;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .section {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #1ba1bf;
+      margin-top: 0;
+    }
+    .subheading {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      color: #1ba1bf;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1;
+      min-width: 280px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1db6f2;
+    }
+    .card p, .card ul {
+      margin: 8px 0;
+    }
+    .card ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .customize {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+    .contact-tiles {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .tile {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px 15px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .tile:hover {
+      background-color: #f0f0f0;
+    }
+    .tile a {
+      text-decoration: none;
+      color: #1db6f2;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    .tile img {
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      margin-right: 4px;
+    }
+    details {
+      cursor: pointer;
+    }
+    details summary {
+      list-style: none;
+      font-weight: bold;
+      color: #1db6f2;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary::after {
+      content: " ▼";
+    }
+    details[open] summary::after {
+      content: " ▲";
+    }
+    details div {
+      margin-top: 8px;
+      padding-left: 10px;
+    }
+    details div a {
+      font-weight: normal;
+      color: #1db6f2;
+    }
+    .footer {
+      background-color: #1db6f2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .disclaimer {
+      font-size: 0.85em;
+      color: #555;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .icon-attribution {
+      font-size: 0.8em;
+      color: #555;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .icon-attribution a {
+      text-decoration: none;
+      color: #1db6f2;
+    }
+    /* Style for the pseudo-CAPTCHA checkbox */
+    .captcha {
+      margin-top: 5px;
+    }
+    .captcha label {
+      font-size: 0.9em;
+      color: #1db6f2;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="logo-section">
+    <img src="https://i.imgur.com/AWPFR4v.png" alt="Velton Gooden Jr Logo">
+  </div>
+  <div class="header">
+    <h1>Service Offerings & Pricing Guide</h1>
+    <h3>Velton Gooden Jr. - Digital Content Creation</h3>
+  </div>
+  
+  <!-- Video Production & Post-Production Solutions Section -->
+  <div class="section">
+    <h2>Video Production & Post-Production Solutions</h2>
+    
+    <!-- Video Editing Subcategory -->
+    <div class="subheading">Video Editing</div>
+    <div class="card-container">
+      <div class="card">
+        <h3>Basic Editing</h3>
+        <p><strong>$5,000</strong></p>
+        <ul>
+          <li>Up to 2 mins</li>
+          <li>Simple cuts &amp; transitions</li>
+          <li>Basic audio levelling</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Advanced Editing</h3>
+        <p><strong>$10,000</strong></p>
+        <ul>
+          <li>Up to 5 mins</li>
+          <li>Simple logo intro/outro</li>
+          <li>Colour grading</li>
+          <li>Audio levelling</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Complex Editing</h3>
+        <p><strong>$20,000</strong></p>
+        <ul>
+          <li>Up to 10 mins</li>
+          <li>Advanced logo intro/outro</li>
+          <li>Enhanced transitions</li>
+          <li>Detailed colour grading</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Subtitles &amp; Audio Enhancement (Add-on)</h3>
+        <p><strong>$5,000</strong></p>
+        <p style="font-size: 0.9em; color: #555;">Includes unlimited corrections and revisions to captions</p>
+      </div>
+    </div>
+    
+    <!-- Voiceover Production (Separate Card) -->
+    <div class="card-container" style="margin-top: 20px;">
+      <div class="card" style="flex: 1 1 100%;">
+        <h3>Voiceover Production</h3>
+        <p><strong>Starting from $8,000</strong></p>
+        <p style="font-size: 0.9em; color: #555;">Consultation will determine feasibility and pricing based on scope, usage, and potential discounts if paired with other services.</p>
+      </div>
+    </div>
+    
+    <!-- Full Production Packages and Project Bundles -->
+    <div class="subheading" style="margin-top: 30px;">Production Packages &amp; Bundles</div>
+    <div class="card-container">
+      <div class="card">
+        <h3>Event Coverage</h3>
+        <p><em>Price: Consultation required</em></p>
+        <p style="font-size: 0.9em; color: #555;">Tailored 4K event coverage with professional post-production.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial</h3>
+        <p><em>Price: Consultation required</em></p>
+        <p style="font-size: 0.9em; color: #555;">Customized production solutions for commercial projects.</p>
+      </div>
+      <div class="card">
+        <h3>Small Project Bundle</h3>
+        <p><strong>$30,000</strong></p>
+        <p style="font-size: 0.9em; color: #555;">Bundle for up to 3 videos</p>
+      </div>
+      <div class="card">
+        <h3>Large Project Bundle</h3>
+        <p><strong>$50,000</strong></p>
+        <p style="font-size: 0.9em; color: #555;">Bundle for up to 6 videos</p>
+      </div>
+    </div>
+    
+    <p class="customize"><strong>Note:</strong> Customization to each package is available based on consultation and final client needs.</p>
+  </div>
+  
+  <!-- Social Media Services Section -->
+  <div class="section social-media">
+    <h2>Social Media Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Basic Package</h3>
+        <ul>
+          <li>12 posts (6 Reels, 6 Graphics)</li>
+          <li>Community Management</li>
+          <li>Monthly Reporting</li>
+          <li>Facebook &amp; Instagram</li>
+        </ul>
+        <p><strong>$85,000</strong></p>
+      </div>
+      <div class="card">
+        <h3>Standard Package</h3>
+        <ul>
+          <li>14 posts (6 Reels, 7 Graphics, 1 Produced Video)</li>
+          <li>Community Management</li>
+          <li>Bi-weekly Reporting</li>
+          <li>Facebook, Instagram, LinkedIn</li>
+        </ul>
+        <p><strong>$110,000</strong></p>
+      </div>
+      <div class="card">
+        <h3>Premium Package</h3>
+        <ul>
+          <li>16 posts (7 Reels, 8 Graphics, 1 Produced Video)</li>
+          <li>Community Management</li>
+          <li>Weekly Reporting</li>
+          <li>Facebook, Instagram, LinkedIn, TikTok &amp; Shorts</li>
+        </ul>
+        <p><strong>$150,000</strong></p>
+      </div>
+    </div>
+    <p class="customize"><strong>Note:</strong> Customization to each package is available based on consultation and final client needs.</p>
+  </div>
+  
+  <!-- Contact Information Section -->
+  <div class="section">
+    <h2 style="text-align: center;">Contact Information</h2>
+    <div class="contact-tiles">
+      <div class="tile">
+        <details>
+          <summary>
+            <img src="https://i.imgur.com/fWZSQYg.png" alt="Phone Icon"> Phone
+          </summary>
+          <div class="captcha">
+            <input type="checkbox" id="phoneCheck" onchange="toggleVisibility('phoneCheck', 'phoneContent');">
+            <label for="phoneCheck">You aren't a malicious user or bot, are you?</label>
+          </div>
+          <div id="phoneContent" style="display:none; margin-top: 5px;">
+            <a href="tel:+18765735858" target="_blank">+1 (876) 573-5858</a>
+          </div>
+        </details>
+      </div>
+      <div class="tile">
+        <details>
+          <summary>
+            <img src="https://i.imgur.com/lkzMY0J.png" alt="Email Icon"> Email
+          </summary>
+          <div class="captcha">
+            <input type="checkbox" id="emailCheck" onchange="toggleVisibility('emailCheck', 'emailContent');">
+            <label for="emailCheck">You aren't a malicious user or bot, are you?</label>
+          </div>
+          <div id="emailContent" style="display:none; margin-top: 5px;">
+            <a href="mailto:info@veltongoodenjr.com" target="_blank">info@veltongoodenjr.com</a>
+          </div>
+        </details>
+      </div>
+      <div class="tile">
+        <a href="https://veltongoodenjr.com" target="_blank">
+          <img src="https://i.imgur.com/ojFvR3q.png" alt="Website Icon"> Website
+        </a>
+      </div>
+      <div class="tile">
+        <a href="https://www.linkedin.com/in/veltongoodenjr" target="_blank">
+          <img src="https://i.imgur.com/F07TELH.png" alt="LinkedIn Icon"> LinkedIn
+        </a>
+      </div>
+      <div class="tile">
+        <a href="https://www.instagram.com/veltongoodenjr" target="_blank">
+          <img src="https://i.imgur.com/kdoPJXP.png" alt="Instagram Icon"> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    Disclaimer: The prices listed herein are subject to periodic review and will only be adjusted in a fair and measured manner with adequate advance notice to both existing and prospective clients. This pricing guide is provided for informational purposes only and does not constitute a binding offer until confirmed in writing by Velton Gooden Jr.
+  </div>
+  
+  <!-- Icon Attribution Dropdown -->
+  <div style="margin-bottom: 20px;">
+    <details style="font-size: 0.8em; color: #555; text-align: center;">
+      <summary style="cursor: pointer;">Icon Attributions</summary>
+      <div style="margin-top: 5px; line-height: 1.4;">
+        <a target="_blank" href="https://icons8.com/icon/87192/smartphone">Phone</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+        <a target="_blank" href="https://icons8.com/icon/84888/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+        <a target="_blank" href="https://icons8.com/icon/94652/email">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+        <a target="_blank" href="https://icons8.com/icon/84884/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+        <a target="_blank" href="https://icons8.com/icon/88195/internet">Website</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+    </details>
+  </div>
+  
+  <!-- Footer with Year at the Beginning -->
+  <div class="footer">
+    © <span id="year"></span> – Velton Gooden Jr. - Digital Content Creation
+  </div>
+</div>
+<script>
+  function toggleVisibility(checkId, contentId) {
+    var checkbox = document.getElementById(checkId);
+    var content = document.getElementById(contentId);
+    content.style.display = checkbox.checked ? 'block' : 'none';
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
