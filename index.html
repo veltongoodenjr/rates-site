@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="VGJ Favicon.svg">
   <title>Service Offerings & Pricing Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -83,17 +84,48 @@
       border-radius: 8px;
       padding: 15px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      text-align: center;
     }
     .card h3 {
       margin-top: 0;
       color: #1db6f2;
     }
-    .card p, .card ul {
+    .card p {
       margin: 8px 0;
+      text-align: center;
     }
-    .card ul {
-      list-style-type: disc;
-      margin-left: 20px;
+    /* Video Editing section: centered service lines with blue bullet in secondary colour */
+    .video-editing p.service-line {
+      margin: 5px 0;
+      text-align: center;
+    }
+    .video-editing p.service-line::before {
+      content: "• ";
+      font-weight: bold;
+      color: #1ba1bf;
+    }
+    /* Social Media section: flat bullet list with custom blue bullet */
+    .social-media .card ul {
+      list-style: none;
+      margin: 8px 0;
+      padding: 0 0 0 20px;
+      text-align: left;
+    }
+    .social-media .card ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+    .social-media .card ul li::before {
+      content: "• ";
+      position: absolute;
+      left: 0;
+      color: #1ba1bf;
+      font-weight: bold;
+    }
+    .price {
+      margin-top: 10px;
     }
     .customize {
       font-style: italic;
@@ -200,7 +232,7 @@
   </div>
   
   <!-- Video Production & Post-Production Solutions Section -->
-  <div class="section">
+  <div class="section video-editing">
     <h2>Video Production & Post-Production Solutions</h2>
     
     <!-- Video Editing Subcategory -->
@@ -209,36 +241,31 @@
       <div class="card">
         <h3>Basic Editing</h3>
         <p><strong>$5,000</strong></p>
-        <ul>
-          <li>Up to 2 mins</li>
-          <li>Simple cuts &amp; transitions</li>
-          <li>Basic audio levelling</li>
-        </ul>
+        <p class="service-line">Up to 2 mins</p>
+        <p class="service-line">Simple cuts &amp; transitions</p>
+        <p class="service-line">Basic audio levelling</p>
       </div>
       <div class="card">
         <h3>Advanced Editing</h3>
         <p><strong>$10,000</strong></p>
-        <ul>
-          <li>Up to 5 mins</li>
-          <li>Simple logo intro/outro</li>
-          <li>Colour grading</li>
-          <li>Audio levelling</li>
-        </ul>
+        <p class="service-line">Up to 5 mins</p>
+        <p class="service-line">Simple logo intro/outro</p>
+        <p class="service-line">Colour grading</p>
+        <p class="service-line">Audio levelling</p>
       </div>
       <div class="card">
         <h3>Complex Editing</h3>
         <p><strong>$20,000</strong></p>
-        <ul>
-          <li>Up to 10 mins</li>
-          <li>Advanced logo intro/outro</li>
-          <li>Enhanced transitions</li>
-          <li>Detailed colour grading</li>
-        </ul>
+        <p class="service-line">Up to 10 mins</p>
+        <p class="service-line">Advanced logo intro/outro</p>
+        <p class="service-line">Enhanced transitions</p>
+        <p class="service-line">Detailed colour grading</p>
       </div>
       <div class="card">
         <h3>Subtitles &amp; Audio Enhancement (Add-on)</h3>
         <p><strong>$5,000</strong></p>
-        <p style="font-size: 0.9em; color: #555;">Includes unlimited corrections and revisions to captions</p>
+        <p class="service-line">Includes unlimited revisions to subtitles.</p>
+        <p style="font-size: 0.9em; color: #555;">*Conditions apply.</p>
       </div>
     </div>
     
@@ -276,48 +303,51 @@
       </div>
     </div>
     
-    <p class="customize"><strong>Note:</strong> Customization to each package is available based on consultation and final client needs.</p>
+    <p class="customize"><strong>Note:</strong> Customisation to each package is available based on consultation and final client needs.</p>
   </div>
   
   <!-- Social Media Services Section -->
   <div class="section social-media">
-    <h2>Social Media Services</h2>
+    <h2 style="text-align: center;">Social Media Services</h2>
     <div class="card-container">
       <div class="card">
         <h3>Basic Package</h3>
         <ul>
-          <li>12 posts (6 Reels, 6 Graphics)</li>
+          <li><strong>12 posts:</strong> 6 Reels (≤ 30 sec), 6 Graphic Posts</li>
           <li>Community Management</li>
           <li>Monthly Reporting</li>
           <li>Facebook &amp; Instagram</li>
         </ul>
-        <p><strong>$85,000</strong></p>
+        <p class="price"><strong>$85,000</strong></p>
       </div>
       <div class="card">
         <h3>Standard Package</h3>
         <ul>
-          <li>14 posts (6 Reels, 7 Graphics, 1 Produced Video)</li>
+          <li><strong>14 posts:</strong> 6 Reels (≤ 30 sec), 5 Graphic Posts, 1 Carousel, 1 Promotional Video (≤ 60 sec, 16:9 aspect ratio)</li>
           <li>Community Management</li>
           <li>Bi-weekly Reporting</li>
           <li>Facebook, Instagram, LinkedIn</li>
         </ul>
-        <p><strong>$110,000</strong></p>
+        <p class="price"><strong>$110,000</strong></p>
       </div>
       <div class="card">
         <h3>Premium Package</h3>
         <ul>
-          <li>16 posts (7 Reels, 8 Graphics, 1 Produced Video)</li>
+          <li><strong>17 posts:</strong> 7 Reels (≤ 30 sec), 5 Graphic Posts, 2 Carousels, 1 Promotional Video (≤ 60 sec, 16:9 and 9:16 aspect ratios)</li>
           <li>Community Management</li>
           <li>Weekly Reporting</li>
           <li>Facebook, Instagram, LinkedIn, TikTok &amp; YouTube Shorts*</li>
         </ul>
-        <p><strong>$150,000</strong></p>
+        <p class="price"><strong>$150,000</strong></p>
         <p style="font-size: 0.8em; color: #555; margin-top: 5px;">
           * For TikTok &amp; YouTube Shorts: Reposting of reels only (provided logins are available). No active management is included.
         </p>
+        <p style="font-size: 0.8em; color: #555; margin-top: 5px;">
+          ** Promotional Video: Posted on your YouTube channel without active management (provided logins are available).
+        </p>
       </div>
     </div>
-    <p class="customize"><strong>Note:</strong> Customization to each package is available based on consultation and final client needs.</p>
+    <p class="customize"><strong>Note:</strong> Customisation to each package is available based on consultation and final client needs.</p>
   </div>
   
   <!-- Contact Information Section -->
@@ -331,7 +361,7 @@
           </summary>
           <div class="captcha">
             <input type="checkbox" id="phoneCheck" onchange="toggleVisibility('phoneCheck', 'phoneContent');">
-            <label for="phoneCheck">You aren't a malicious user or bot, are you?</label>
+            <label for="phoneCheck">I am not a malicious user or bot. (Or am I?)</label>
           </div>
           <div id="phoneContent" style="display:none; margin-top: 5px;">
             <a href="tel:+18765735858" target="_blank">+1 (876) 573-5858</a>
@@ -345,7 +375,7 @@
           </summary>
           <div class="captcha">
             <input type="checkbox" id="emailCheck" onchange="toggleVisibility('emailCheck', 'emailContent');">
-            <label for="emailCheck">You aren't a malicious user or bot, are you?</label>
+            <label for="emailCheck">I am not a malicious user or bot. (Or am I?)</label>
           </div>
           <div id="emailContent" style="display:none; margin-top: 5px;">
             <a href="mailto:info@veltongoodenjr.com" target="_blank">info@veltongoodenjr.com</a>
